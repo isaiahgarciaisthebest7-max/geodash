@@ -7,9 +7,9 @@ body {
 
 #game {
     position: relative;
-    width: 800px;
-    height: 200px;
-    background: #222;
+    width: 1000px;
+    height: 250px;
+    background: #111;
     margin: auto;
     overflow: hidden;
     border: 3px solid white;
@@ -21,15 +21,22 @@ body {
     height: 40px;
     background: cyan;
     bottom: 0;
-    left: 50px;
+    left: 100px;
 }
 
 .spike {
     position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid red;
+    width: 40px;
+    height: 40px;
+    background: red;
+    bottom: 0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.portal {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background: purple;
     bottom: 0;
 }
